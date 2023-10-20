@@ -1,0 +1,9 @@
+[submodule "extern/ENCRYPTO_utils"]
+	path = extern/ENCRYPTO_utils
+	url = https://github.com/encryptogroup/ENCRYPTO_utils.git
+[submodule "extern/ABY"]
+	path = extern/ABY
+	url = https://github.com/encryptogroup/ABY.git
+[submodule "extern/ENCRYPTO_untils"]
+	path = extern/ENCRYPTO_untils
+	url = https://github.com/encryptogroup/ENCRYPTO_utils.git

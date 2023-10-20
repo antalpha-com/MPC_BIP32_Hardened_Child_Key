@@ -1,0 +1,12 @@
+get_filename_component(HMAC512_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+list(APPEND CMAKE_MODULE_PATH "${HMAC512_CMAKE_DIR}")
+
+include(CMakeFindDependencyMacro)
+
+find_dependency(ABY)
+find_dependency(ENCRYPTO_utils)
+
+if(NOT TARGET HMAC512::hmac512)
+	include("${HMAC512_CMAKE_DIR}/HMAC512Targets.cmake")
+endif()
