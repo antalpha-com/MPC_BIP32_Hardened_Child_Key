@@ -20,11 +20,11 @@ MPC，即“多方计算”，它是一种密码协议，使多个参与方能�
 
 6. 注意事项
 
-以上步骤的具体操作请查阅[用户手册]()
+以上步骤的具体操作请查阅[用户手册](https://github.com/antalpha-com/MPC_BIP32_Hardened_Child_Key/blob/master/docs/用户手册.md)
 
 ## 技术原理
 
-该项目以论文[ABY – A Framework for Effificient Mixed-Protocol Secure Two-Party Computation]()为技术支撑，使用ABY框架实现了布尔共享与姚氏共享的转换、利用姚氏电路实现两方的HMAC512运算，并使用OT扩展、大数运算等技术实现了大数的布尔共享与算数共享的转换。
+该项目以论文[ABY – A Framework for Effificient Mixed-Protocol Secure Two-Party Computation](https://encrypto.de/papers/DSZ15.pdf)为技术支撑，使用ABY框架实现了布尔共享与姚氏共享的转换、利用姚氏电路实现两方的HMAC512运算，并使用OT扩展、大数运算等技术实现了大数的布尔共享与算数共享的转换。
 
 该项目使用了姚氏共享的优化方案，采用了半门技术、Free XOR、固定密钥AES（构建混淆电路）等优化技术。
 
