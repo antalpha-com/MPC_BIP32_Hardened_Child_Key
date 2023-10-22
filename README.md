@@ -20,7 +20,7 @@ MPC，即“多方计算”，它是一种密码协议，使多个参与方能�
 
 6. 注意事项
 
-以上步骤的具体操作请查阅[中文版用户手册](https://github.com/antalpha-com/MPC_BIP32_Hardened_Child_Key/blob/master/docs/用户手册.md)，[English version of the user manual](https://github.com/antalpha-com/MPC_BIP32_Hardened_Child_Key/blob/master/docs/User Manual.md)。
+以上步骤的具体操作请查阅[中文版用户手册](https://github.com/antalpha-com/MPC_BIP32_Hardened_Child_Key/blob/master/docs/用户手册.md)，[English version of the user manual](https://github.com/antalpha-com/MPC_BIP32_Hardened_Child_Key/blob/master/docs/User%20Manual.md)。
 
 ## 技术原理
 
