@@ -1,6 +1,6 @@
 # Introduction
 
-This project implements the generation of hardened child keys in the BIP32 protocol. The input is chain code, parent private/public key and index, and the output is IL||IR , where IL (32 bytes) is the arithmetic shared value of both parties, which will be used to generate the child private/public  key, and IR (32 bytes)  is the newly generated chain code.
+This project implements the generation of hardened child keys described in [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#user-content-Child_key_derivation_CKD_functions). The inputs of the function are mainly chain code, parent private/public key and index, and the output is IL||IR. IL (32 bytes) is the arithmetic shared value of both parties and will be used to generate the child private/public  key. IR (32 bytes)  is the newly generated chain code. 
 
 # How to deploy
 
@@ -8,7 +8,7 @@ This project implements the generation of hardened child keys in the BIP32 proto
 
 - Since this project uses the ABY framework, the requirements are similar to ABY.
 
-- The **Linux distribution** of your choice . This project was developed and tested with Ubuntu18.04.
+- The **Linux distribution** of your choice . (This project currently only supports x86 architecture and was developed and tested with Ubuntu18.04)
 
 - **Required packages**:
 
