@@ -116,6 +116,29 @@ This project implements the generation of hardened child keys described in [BIP3
 
   - When the chain code and parent extended private key are input, the format is hexadecimal little-endian and needs to be aligned by bytes. For example, the string "abc" should be converted to "616263".
 
+# Interface
+
+- You can call the following interface in your code to obtain the result of IL (Arith Share) and chain code. The interface is defined in `src/hmac512_circuit/hmac512_circuit.h`
+
+  - ```
+    uint8_t* hmac512_circuit(e_role role, const std::string &address, uint16_t port, seclvl seclvl, uint32_t bitlen, std::string skey, std::string sdata, uint32_t ser)
+    ```
+
+  - Parameter Description:
+
+    ```
+    role - role，0 is for server and 1 is for client.
+    address - IP address.
+    port - Port number.
+    seclvl - System security parameter; default value is 128.
+    bitlen - Shared bit length.
+    skey - Chain code (32 bytes, Hexadecimal, little endian).
+    sdata - Parent public/private key (32 bytes, Hexadecimal, little endian).
+    ser - Index of child public/private key.
+    ```
+
+  - return value: a byte array (512 bits), of which the first 256 bits are IL (arithmetic sharing) and the last 256 bits are IR.
+
 # Notice
 
 - ABY code provides two gates that should only be used during development and test: the PrintValue gate and the Assert gate. These two gates cannot be used when working with private data because they will leak intermediate values. To disable these gates, set the macro `ABY_PRODUCTION` to 1 in `/extern/ABY/src/abycore/ABY_utils/ABYconstants.h:25`.
