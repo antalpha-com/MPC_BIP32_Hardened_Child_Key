@@ -1,6 +1,16 @@
 # MPC_BIP32_Hardened_Child_Key
-
-[TOC]
+- [中文版](#中文版)
+  - [介绍](#介绍)
+  - [教程](#教程)
+  - [技术原理](#技术原理)
+  - [社区讨论](#社区讨论)
+  - [参考文献](#参考文献)
+- [English Version](#english-version)
+  - [Introduction](#introduction)
+  - [Tutorial](#tutorial)
+  - [Technical principles](#technical-principles)
+  - [Community discussion](#community-discussion)
+  - [References](#references)
 
 # 中文版
 
@@ -95,3 +105,6 @@ Here is an open, equal and inclusive MPC enterprise community, where you can con
 [4] Kolesnikov, Vladimir, and Thomas Schneider. "Improved garbled circuit: Free XOR gates and applications." *Automata, Languages and Programming: 35th International Colloquium, ICALP 2008, Reykjavik, Iceland, July 7-11, 2008, Proceedings, Part II 35*. Springer Berlin Heidelberg, 2008.
 
 [5] Beaver, Donald, Silvio Micali, and Phillip Rogaway. "The round complexity of secure protocols." *Proceedings of the twenty-second annual ACM symposium on Theory of computing*. 1990.
+
+## License
+
