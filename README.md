@@ -11,6 +11,7 @@
   - [Technical principles](#technical-principles)
   - [Community discussion](#community-discussion)
   - [References](#references)
+  - [License](#License)
 
 # 中文版
 
@@ -108,3 +109,4 @@ Here is an open, equal and inclusive MPC enterprise community, where you can con
 
 ## License
 
+[License](https://github.com/antalpha-com/MPC_BIP32_Hardened_Child_Key/blob/master/LICENSE.txt)
