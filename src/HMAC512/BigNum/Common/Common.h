@@ -1,3 +1,9 @@
+// Copyright Â© 2023 Antalpha
+//
+// This file is part of Antalpha. The full Antalpha copyright notice, including
+// terms governing use, modification, and redistribution, is contained in the
+// file LICENSE at the root of the source code distribution tree.
+
 #ifndef	HEADER_COMMON_H
 #define HEADER_COMMON_H
 
@@ -67,49 +73,49 @@ typedef enum
 #include <stdio.h>
 
 /*
- * ´òÓ¡ U32 Êý×éµ½ÆÁÄ»ÉÏ
+ * ï¿½ï¿½Ó¡ U32 ï¿½ï¿½ï¿½éµ½ï¿½ï¿½Ä»ï¿½ï¿½
  */
 void U32_prt(const U32 *n, U32 wordLen, const char *name);
 
 /*
- * ´òÓ¡ U8 Êý×éµ½ÆÁÄ»ÉÏ
+ * ï¿½ï¿½Ó¡ U8 ï¿½ï¿½ï¿½éµ½ï¿½ï¿½Ä»ï¿½ï¿½
  */
 void U8_prt(const U8 *n, U32 byteLen, const char *name);
 
 /*
- * ´òÓ¡´íÎóÐÅÏ¢
+ * ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
  */
 void RET_prt(RET ret);
 
 #endif
 
 /*
- * ×Ö·û´®×ª»»³É U8 Êý×é, ·µ»Ø³¤¶È
+ * ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ U8 ï¿½ï¿½ï¿½ï¿½, ï¿½ï¿½ï¿½Ø³ï¿½ï¿½ï¿½
  */
 U32 strToU8(const char *src, U8 *dst);
 
 /*
- * U32 Êý×é£¨×Ö¼äÐ¡¶Ë£©×ª»»³É U8 Êý×é£¨×Ö½Ú´ó¶Ë£©
+ * U32 ï¿½ï¿½ï¿½é£¨ï¿½Ö¼ï¿½Ð¡ï¿½Ë£ï¿½×ªï¿½ï¿½ï¿½ï¿½ U8 ï¿½ï¿½ï¿½é£¨ï¿½Ö½Ú´ï¿½Ë£ï¿½
  */
 RET U32ToU8(const U32 *src, U8 *dst, U32 byteLen);
 
 /*
- * U8 Êý×é£¨×Ö½Ú´ó¶Ë£©×ª»»³É U32 Êý×é£¨×Ö¼äÐ¡¶Ë£©
+ * U8 ï¿½ï¿½ï¿½é£¨ï¿½Ö½Ú´ï¿½Ë£ï¿½×ªï¿½ï¿½ï¿½ï¿½ U32 ï¿½ï¿½ï¿½é£¨ï¿½Ö¼ï¿½Ð¡ï¿½Ë£ï¿½
  */
 RET U8ToU32(const U8 *src, U32 *dst, U32 byteLen);
 
 /*
- * »ñÈ¡µ¥¸öwordµÄ±ÈÌØ³¤¶È£¨´Ó 1 ¿ªÊ¼¼ÆËã£©
+ * ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½wordï¿½Ä±ï¿½ï¿½Ø³ï¿½ï¿½È£ï¿½ï¿½ï¿½ 1 ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ã£©
  */
 U32 U32_getBitLen(U32 n);
 
 /*
- * ÉèÖÃËæ»úÊýÖÖ×Ó
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 void setSeed(int s);
 
 /*
- * »ñÈ¡ U32 ÐÍËæ»úÊý
+ * ï¿½ï¿½È¡ U32 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 RET U32_getRand(U32 *n, U32 len);
 

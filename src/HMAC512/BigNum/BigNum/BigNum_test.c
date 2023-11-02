@@ -1,3 +1,9 @@
+// Copyright © 2023 Antalpha
+//
+// This file is part of Antalpha. The full Antalpha copyright notice, including
+// terms governing use, modification, and redistribution, is contained in the
+// file LICENSE at the root of the source code distribution tree.
+
 #include "BigNum.h"
 
 int BigNum_test()

@@ -1,3 +1,9 @@
+// Copyright © 2023 Antalpha
+//
+// This file is part of Antalpha. The full Antalpha copyright notice, including
+// terms governing use, modification, and redistribution, is contained in the
+// file LICENSE at the root of the source code distribution tree.
+
 #ifndef HEADER_BIGNUM_H
 #define HEADER_BIGNUM_H
 
@@ -8,7 +14,7 @@
 
 typedef struct
 {
-	U32 *data;	//unsigned int型得数组
+	U32 *data;	//unsigned int
 	U32	maxLen;
 	U32 len;
 }BigNum;
