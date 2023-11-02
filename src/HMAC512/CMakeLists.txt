@@ -9,6 +9,7 @@ add_library(hmac512
 add_library(HMAC512::hmac512 ALIAS hmac512)
 
 target_compile_features(hmac512 PUBLIC cxx_std_17)
+
 #target_compile_options(hmac512 PRIVATE "-Wall" "-Wextra" "-Weffc++")
 target_compile_options(hmac512 PRIVATE "-Wall" "-Wextra")
 

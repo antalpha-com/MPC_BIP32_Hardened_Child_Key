@@ -6,6 +6,7 @@
 
 #include "Common.h"
 
+
 int Common_test()
 {
 	U32		n[MAXWORDLEN] = {0};

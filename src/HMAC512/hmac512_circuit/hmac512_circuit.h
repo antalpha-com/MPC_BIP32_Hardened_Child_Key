@@ -1,9 +1,3 @@
-// Copyright © 2023 Antalpha
-//
-// This file is part of Antalpha. The full Antalpha copyright notice, including
-// terms governing use, modification, and redistribution, is contained in the
-// file LICENSE at the root of the source code distribution tree.
-
 #ifndef __HMAC512_CIRCUIT_H_
 #define __HMAC512_CIRCUIT_H_
 
@@ -126,7 +120,7 @@ const uint64_t ConstantSHA512[80]={
 };
 
 // test the hmac circuit
-uint8_t* test_hmac512_circuit(e_role role, const std::string &address, uint16_t port, seclvl seclvl, uint32_t nthreads, e_mt_gen_alg mt_alg, e_sharing sharing, uint32_t bitlen, std::string skey, std::string sdata, uint32_t ser);
+uint8_t* hmac512_circuit(e_role role, const std::string &address, uint16_t port, seclvl seclvl, uint32_t bitlen, std::string skey, std::string sdata, uint32_t ser);
 
 // Convert string to bytes
 uint8_t* str2byte(std::string str, uint32_t len);

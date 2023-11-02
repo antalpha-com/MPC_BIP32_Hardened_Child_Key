@@ -10,10 +10,10 @@
 #include <ENCRYPTO_utils/crypto/crypto.h>
 #include <cstring>
 
-uint8_t* test_hmac512_circuit(e_role role, const std::string &address, uint16_t port, seclvl seclvl, uint32_t nthreads, e_mt_gen_alg mt_alg, e_sharing sharing, uint32_t bitlen, std::string key_s, std::string data_s, uint32_t ser)
+uint8_t* hmac512_circuit(e_role role, const std::string &address, uint16_t port, seclvl seclvl, uint32_t bitlen, std::string key_s, std::string data_s, uint32_t ser)
 {
 	// init
-	ABYParty *party = new ABYParty(role, address, port, seclvl, 256, nthreads, mt_alg);
+	ABYParty *party = new ABYParty(role, address, port, seclvl, 256, 2, MT_OT);
 	std::vector<Sharing *> &sharings = party->GetSharings();
 
 	Circuit *ycirc = sharings[S_YAO]->GetCircuitBuildRoutine();
@@ -31,7 +31,7 @@ uint8_t* test_hmac512_circuit(e_role role, const std::string &address, uint16_t 
 	uint8_t *data = str2byte(data_s, 32);
 
 	// test
-	std::cout << "key:\t";
+	std::cout << "Chain code:\t";
 	for (uint32_t j = 0; j < 32; j++)
 	{
 		std::cout << std::hex << ((key[j] & 0xf0) >> 4) << (key[j] & 0x0f);
@@ -39,7 +39,7 @@ uint8_t* test_hmac512_circuit(e_role role, const std::string &address, uint16_t 
 	std::cout << "\n";
 
 	//test
-	std::cout << "data:\t";
+	std::cout << "Parent key:\t";
 	for (uint32_t j = 0; j < 32; j++)
 	{
 		std::cout << std::hex << ((data[j] & 0xf0) >> 4) << (data[j] & 0x0f);
@@ -108,7 +108,7 @@ uint8_t* test_hmac512_circuit(e_role role, const std::string &address, uint16_t 
 	/**********************************************************/
 	// Now we have the boolean share of IL, and then convert it to arithmetic share
 	// Init, similar to abyparty
-	B2AParty *b2aparty = new B2AParty(role, address, port, seclvl, bitlen,  nthreads, mt_alg);
+	B2AParty *b2aparty = new B2AParty(role, address, port, seclvl, bitlen,  2, MT_OT);
 	B2Asharing *b2asharing = b2aparty->GetSharing();
 	
 	// Input share, which will be converted

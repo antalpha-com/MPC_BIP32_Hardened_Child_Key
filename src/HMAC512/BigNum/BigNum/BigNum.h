@@ -14,7 +14,7 @@
 
 typedef struct
 {
-	U32 *data;	//unsigned int
+	U32 *data;	//unsigned int型得数组
 	U32	maxLen;
 	U32 len;
 }BigNum;

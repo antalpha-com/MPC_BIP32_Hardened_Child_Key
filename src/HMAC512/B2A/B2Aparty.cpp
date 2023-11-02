@@ -380,7 +380,9 @@ void B2AParty::CPartyWorkerThread::ThreadMain() {
 }
 
 BOOL B2AParty::InitConv(uint32_t bitlen){
-	Sharing = new B2Asharing(eRole, bitlen, Crypt.get());
+	if(Sharing = new B2Asharing(eRole, bitlen, Crypt.get()))
+		return true;
+	else return false;
 }
 
 B2Asharing* B2AParty::GetSharing() {
